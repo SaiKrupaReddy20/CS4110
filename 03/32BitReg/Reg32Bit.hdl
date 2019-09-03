@@ -1,0 +1,10 @@
+CHIP Reg32Bit {
+    IN in[32], load;
+    OUT out[32];
+
+    PARTS:
+	Reg16Bit(in=in[0..15], load=load, out=out[0..15]);
+	Reg16Bit(in=in[16..31], load=load, out=out[16..31]);
+	
+}
+
