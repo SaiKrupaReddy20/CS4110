@@ -1,7 +1,0 @@
-CHIP myDFF {
-	IN in;
-	OUT out;
-
-	BUILTIN DFF;
-	CLOCKED in;
-}
